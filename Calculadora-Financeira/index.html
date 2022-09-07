@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora Financeira</title>
+</head>
+<body>
+
+    <div class="div_main">
+        <h1 class="h1_titulo">Simule sua econonomia</h1>
+        <div class="div_container">
+            <div class="div_box_esquerda">
+                <p class="p_texto">Com um sistema de controle de temperatura para animais do seu PetShop, você terá uma <span class="porcentagem">maior economia!</span></p>
+
+                <img src="img/Rectangle 64.png">
+            </div>
+            <div class="div_box_direita">
+                
+                <div class="div_input1">
+                    <p class="p_esquerdo">Quantos animais têm no seu terrário?</p>
+                    <input type="number" id="in_animais">
+                </div>
+
+
+                <div class="div_alinhamento">
+                    <button onclick="gastos()" >Simular seu gasto</button>
+                    <button onclick="economia()" >Simular sua economia</button>
+                </div>
+                <div id="div_gastos" class="div_gastos"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function gastos(){
+        var animais = Number(in_animais.value)
+        var gastos = 500
+        var gastosTerrario = (gastos * animais) + 900
+   
+            if(animais == 0){
+                var qnt_oximetria = 0
+                gastosTerrario = 0
+            }
+            else{
+                var qnt_oximetria = 1
+            }
+
+            div_gastos.innerHTML = 
+                `<span> Sem um sistema de controle Lorinae você terá um gasto em média por animal de: <br> 
+                <ul>
+                    <li> (x${qnt_oximetria}) R$900,00 Sensor de oximetria </li>
+                    <li> (x${animais}) R$200,00 Almofada Termica </li>
+                    <li> (x${animais}) R$300,00 Cobertor de Ar-quente </li>
+                </ul>
+                Tendo um gastos total de R$${gastosTerrario},00 com o seu terrário.</span>`
+    }
+
+    function economia(){
+
+        var animais = Number(in_animais.value)
+        var gastos = 500
+        var gastosTerrario = (gastos * animais) + 900
+
+        if(animais == 0){
+                gastosTerrario = 0
+        }
+            
+    
+        var economia = gastosTerrario * .15
+        div_gastos.innerHTML = 
+                `<div class="div_alinhamento_texto">
+                <span class="span_economia">Utilizando o sistema Lorinae, seu gasto total que antes era de <b>R$${gastosTerrario},00</b> terá uma subtração de <b>15%</b>, totalizando uma economia de <b>R$${economia},00</b></span>
+                </div>
+                `
+
+    }
+</script>
