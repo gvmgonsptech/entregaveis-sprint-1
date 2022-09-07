@@ -2,6 +2,7 @@
 
 *{
     font-family: sans-serif;
+    color: #404040;
 }
 body{
     margin: 0;
@@ -10,10 +11,10 @@ body{
 }
 
 .h1_titulo{
-    background-color: #7B6E6E;
+    background-color: #708c6c;
     margin: 0;
     padding-top: 10px;
-    color: #fff;
+    color: #f2b366;
     padding-bottom: 12px;
     font-size: 2.1rem;
     text-align: center;
@@ -34,7 +35,7 @@ body{
 }
 
 .div_box_esquerda{
-    background-color: #fff;
+    background-color: #fbf3e4;
     height: 100%;
     width: 50%;
     border-bottom-left-radius: 20px;
@@ -49,12 +50,12 @@ body{
 .porcentagem{
     font-weight: 800;
     font-size: 1.5rem;
-    color: #E40000;
+    color: #42badb;
 }
 
 
 .div_box_direita{
-    background-color: #5C5959;
+    background-color: #a4bf7a;
     height: 100%;
     width: 50%;
     border-end-end-radius: 20px;
@@ -69,12 +70,13 @@ body{
 .div_input1, .div_alinhamento{
     margin-left: 20px;
 }
-.p_esquerdo{
-    color: #fff;
-    font-size: 1rem
+.p_direito{
+    color: #404040;
+    font-size: 1.0rem;
+    font-weight: bolder;
 }
 input{
-    background-color: #D9D9D9;
+    background-color: #fbf3e4;
     border: 0px;
     border-radius: 10px;
     height: 30px;
@@ -88,18 +90,18 @@ input{
     margin-right: 20px;
 }
 button{
-    background-color: #D34C4C;
+    background-color: #f2b366;
     border: 0;
     height: 50px;
     width: 150px;
-    color: #fff;
+    color: #404040;
     font-size: 1.1rem;
     border-radius: 5px;
     margin-top: 25px;
 }
 
 button:hover{
-    background-color: #d85c5c;
+    background-color: #f2b366ce;
     cursor: pointer;
 }
 
@@ -112,31 +114,32 @@ input{
 
 .div_gastos{
     margin-top: 10px;
-    background-color: #fff;
+    background-color: #fbf3e4;
     width:  96%;
     height: 169px;
     border-end-end-radius: 20px;
-    border-left: 4px solid #5C5959;
+    border-left: 4px solid #404040;
     padding-left: 10px;
 }
 
 .div_gastos > .span_nao{
-    font-size: 1.2rem;
-    color: #fff;
-
+    font-size: 1.0rem;
+    color: #404040;
 }
 .div_alinhamento_texto{
     text-align: center;
+    color: #404040;
 
 }
 .span_economia{
     font-size: large;
     text-align: center;
+    color: #404040;
     
 }
 
 b{
     font-size: 1.3rem;
-    color: #E40000;
+    color: #42badb;
     font-weight: bolder;
 }

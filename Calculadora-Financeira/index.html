@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
 
     <title>Calculadora Financeira</title>
@@ -22,10 +21,9 @@
             <div class="div_box_direita">
                 
                 <div class="div_input1">
-                    <p class="p_esquerdo">Quantos animais têm no seu terrário?</p>
+                    <p class="p_direito">Quantos animais têm no seu terrário?</p>
                     <input type="number" id="in_animais">
                 </div>
-
 
                 <div class="div_alinhamento">
                     <button onclick="gastos()" >Simular seu gasto</button>
@@ -54,7 +52,7 @@
             }
 
             div_gastos.innerHTML = 
-                `<span> Sem um sistema de controle Lorinae você terá um gasto em média por animal de: <br> 
+                `<span class=span_nao> Sem um sistema de controle Lorinae você terá um gasto em média por animal de: <br> 
                 <ul>
                     <li> (x${qnt_oximetria}) R$900,00 Sensor de oximetria </li>
                     <li> (x${animais}) R$200,00 Almofada Termica </li>
