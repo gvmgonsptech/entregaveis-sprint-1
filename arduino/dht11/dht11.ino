@@ -2,7 +2,7 @@
 
 #define dht_type DHT11  //define qual o tipo do sensor DHT que está utilizando
 
-int dht_pin = A2; //definindo a porta analogica do DHT
+int dht_pin = A0; //definindo a porta analogica do DHT
 
 DHT dht_1 = DHT(dht_pin, dht_type); //Usando a biblioteca DHT
 

@@ -1,6 +1,6 @@
 // Codigo para o Sensor LM35
 
-const int sensorPin = A0; // Esse é o pino do Arduino que irá ler a saída do sensor
+const int sensorPin = A1; // Esse é o pino do Arduino que irá ler a saída do sensor
 float valorSensor;        // Essa variável irá ser usada para armazenar o input do sensor
 float tensaoSaida;        // Essa variável irá ser usada para armazenar a tensão do sensor
 
