@@ -76,9 +76,9 @@ INSERT INTO arduino (temperatura, dataHoraRegistrada) VALUES
 -- DADOS DOS USUARIOS CADASTRADOS
 SELECT idUsuario AS 'Identificador:', nomeUsuario AS 'Nome:', emailUsuario as 'Email:', cnpj AS 'CNPJ:' FROM usuario;
 
--- DADOS DOS USUARIOS CADASTRADOS COM O CNPJ: 58.312.013/0001-86
+-- DADOS DOS USUARIOS CADASTRADOS COM O INDENTIFICADOR = 7
 SELECT idUsuario AS 'Identificador:', nomeUsuario AS 'Nome:', emailUsuario as 'Email:', cnpj AS 'CNPJ:' FROM usuario
-	WHERE cnpj = '58.312.013/0001-86';
+	WHERE idUsuario = 7;
     
 -- DADOS DOS USUARIOS QUE POSSUEM GMAIL EM ORDEM ALFABÉTICA
 SELECT idUsuario AS 'Identificador:', nomeUsuario AS 'Nome:', emailUsuario as 'Email:', cnpj AS 'CNPJ:' FROM usuario
